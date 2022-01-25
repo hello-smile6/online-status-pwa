@@ -1,0 +1,16 @@
+:root {
+    --dark-theme-color: "dark";
+    --light-theme-color: "light";
+    /* Change this line to set default theme for those without dark mode support yet */
+    --default-theme-color: var(--dark-theme-color);
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --theme-color: var(--dark-theme-color);
+    }
+}
+@media (prefers-color-scheme: light) {
+    :root {
+        --theme-color: var(--light-theme-color);
+    }
+}
